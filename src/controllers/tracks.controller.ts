@@ -51,7 +51,7 @@ export class TracksController {
     }
   })
 
-  getTracks(): Track[] {
+  getTracks(): Promise<Track[]> {
     return this.trackService.getTracks();
   }
 
@@ -91,7 +91,7 @@ export class TracksController {
       }
     }
   })
-  getTrackByID(@Param() params: any): Track | string {
+  getTrackByID(@Param() params: any): Promise<Track> | string {
     const { id } = params;
     const track = this.trackService.getTrackById(id);
     if (track) {
@@ -99,7 +99,7 @@ export class TracksController {
     }
     return 'No se encontro track';
   }
-
+/*
   @Post()
   @ApiOperation({ summary: 'Crea un nuevo track' })
   @ApiBody({
@@ -147,5 +147,5 @@ export class TracksController {
     const { id } = params;
     this.trackService.deleteTrack(id);
     return;
-  }
+  }*/
 }

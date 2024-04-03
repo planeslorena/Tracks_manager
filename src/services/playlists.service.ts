@@ -13,7 +13,7 @@ let myPlaylists: Playlist[] = [
       { id: 1, artist: 'Poul McCarney', duration: 200, title: 'Let it be' },
       { id: 2, artist: 'Poul McCarney', duration: 200, title: 'Let it be' },
       { id: 3, artist: 'Poul McCarney', duration: 200, title: 'Let it be' },
-    ],
+    ], 
     estilo: 'rock & roll',
   },
   {
